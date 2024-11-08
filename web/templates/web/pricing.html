@@ -1,0 +1,481 @@
+{% extends 'web/base1.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html><!-- 
+    Template Name: TEXT-160 SMS
+    Version: 1.0.0
+    Author: Webstrot
+    
+    --><!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]--><!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]--><!--[if !IE]><!--><html lang="zxx"><!--[endif]--><head>
+        <meta charset="utf-8">
+        <title>Worntech Bulk Sms</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'web/images/favicon.png' %}">
+        <meta name="description" content="TEXT-160, bulk sms">
+        <meta name="keywords" content="TEXT-160, bulk sms">
+        <meta name="author" content="">
+        <meta name="MobileOptimized" content="320">
+
+
+        <!-- Animation Css -->
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="{% static 'web/css/bootstrap.min.css' %}" rel="stylesheet">
+        <!-- font-awesome -->
+        <link href="{% static 'web/css/font-awesome.css' %}" rel="stylesheet">
+        <!-- Web Fonts -->
+        <link href="{% static 'web/css/fonts.css' %}" rel="stylesheet">
+        <link href="{% static 'web/css/reset.css' %}" rel="stylesheet">
+        <!-- Flaticon Css -->
+        <link href="{% static 'web/css/flaticon.css' %}" rel="stylesheet">
+        <!-- Owl Carousel -->
+        <link href="{% static 'web/css/testimonial.css' %}" rel="stylesheet">
+        <link href="{% static 'web/css/owl.theme.default.css' %}" rel="stylesheet">
+        <link href="{% static 'web/css/owl.carousel.css' %}" rel="stylesheet">
+        <!-- Style CSS -->
+        <link href="{% static 'web/css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'web/css/responsive.css' %}" rel="stylesheet">
+    </head>
+
+<body>
+
+    <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Preloader start -->
+    <div id="preloader">
+        <div id="status">
+            <div class="status-mes"></div>
+        </div>
+    </div>
+    <!-- Preloader end -->
+
+
+    <!-- header wrapper start -->
+
+    <!-- header wrapper end -->
+    <!--inner Title Start -->
+    <div class="sms_title_main_wrapper">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="sms_inner_title_heading full_width">
+                        <h2>Pricing Table</h2>
+
+                        <ul>
+                            <li><a href="#">Home</a> �&nbsp;�&nbsp;�&nbsp;/</li>
+                            <li>Pricing Table</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- inner Title End -->
+    <!-- pricing amount wrapper start-->
+    <div class="promotion_wrapper pricing_amount_wrapper full_width">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="promotional_banner full_width">
+                        <h1>Making your communication go
+                            vroooom in 90+ countries.</h1>
+                        <p>Start with free credits and get volume discount as it grows</p>
+                        <div class="see_more_btn promotion_btn full_width">
+                            <ul>
+                                <li>
+                                    <a href="pricing.html"> buy now</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="pricing_calculator custom-pricing-section full_width">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-5">
+                                <div class="dropdown banner-dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">
+                                        <input class="" id="currency2" type="hidden"><span class="currencytext2"><span>
+                                                <img src="{% static 'web/images/flag2.png' %}" alt="img"></span>India</span><i class="caret"></i></a>
+                                    <ul class="currencys2 dropdown-menu">
+                                        <li><span> <img src="{% static 'web/images/flag.png' %}" alt="img"></span>Japan</li>
+                                        <li><span> <img src="{% static 'web/images/flag2.png' %}" alt="img"></span>Jordan</li>
+                                        <li><span> <img src="{% static 'web/images/flag3.png' %}" alt="img"></span>Kenya</li>
+                                        <li><span> <img src="{% static 'web/images/flag.png' %}" alt="img"></span>Macao</li>
+                                        <li><span> <img src="{% static 'web/images/flag2.png' %}" alt="img"></span>Turkey</li>
+                                        <li><span> <img src="{% static 'web/images/flag3.png' %}" alt="img"></span>Nepal</li>
+                                        <li><span> <img src="{% static 'web/images/flag.png' %}" alt="img"></span>Niger</li>
+                                        <li><span> <img src="{% static 'web/images/flag2.png' %}" alt="img"></span>Oman</li>
+                                        <li><span> <img src="{% static 'web/images/flag3.png' %}" alt="img"></span>Spain</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-sm-7 drppricing col-xs-6">
+                                <div class="dropdown banner-dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown">
+                                        <input class="inputid" id="type" type="hidden"><span class="typetext">Transactional SMS</span><i class="caret"></i></a>
+                                    <ul class="types dropdown-menu">
+                                        <li id="trans">Transactional SMS</li>
+                                        <li id="sendotp">Send OTP</li>
+                                        <li id="promo">Promotional SMS</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class=" col-lg-4 col-sm-5 col-xs-5">
+                                <div class="volume">
+                                    <label>Number of SMS</label>
+                                    <input maxlength="11" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" value="5000" id="noOfSMS" class="inputid form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-sm-6 drppricing col-xs-6">
+                                <div id="main-smscount">
+                                    <div class="smscount">
+                                        <div> <span class="rcost cost">0.2/</span> <span class="sms">SMS</span></div>
+                                        <div class="dropdown banner-dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                                <input class="inputid" id="currency" type="hidden"><span class="currencytext">INR</span><i class="caret"></i></a>
+                                            <ul class="currencys dropdown-menu">
+                                                <li>USD</li>
+                                                <li>AED</li>
+                                                <li>INR</li>
+                                                <li>AUD</li>
+                                                <li>NZD</li>
+                                                <li>EUR</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="pricing-tax" style="display: block">
+                                        <small class="clearfix text-left">*18% GST Extra (India Only)</small> <small class="clearfix text-left">*Min. Purchase: 2500 Credits</small>
+                                    </div>
+                                </div>
+                                <div id="get-custom-quote"> <a href="#" data-toggle="modal" data-target="#talkToSales_dialog">Get custom quote</a></div>
+                            </div>
+
+                            <div class="clearfix col-sm-5 col-xs-5">
+                                <div id="TotalCost" class="amount">
+                                    <label>Total Amount</label> <span class="tcost cost small">0</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- pricing amount wrapper end-->
+    <!-- sms pricing wrapper start -->
+    <div class="sms_pricing_table_wrapper full_width background_color">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sms_heading_wrapper">
+                        <h4>our pricing table</h4>
+                        <h3>Simple, Flexible Bulk SMS Pricing</h3>
+                    </div>
+                </div>
+                <div class="col-12 pricing_overflow_wrap">
+                    <div class="pricing_select_box full_width">
+                        <ul>
+                            <li>SMS Bundle</li>
+                            <li>Per Bundle</li>
+                            <li>Per SMS</li>
+                        </ul>
+
+                        <div class="pricing_box1  full_width">
+                            <label class="pricing_radio">
+                                <span class="pbox1">2,000 Messages</span><span class="pbox2">$1,250 </span><span class="pbox3">$0.25</span>
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <div class="pricing_box1  full_width">
+                            <label class="pricing_radio"><span class="pbox1">5,000 Messages</span><span class="pbox2">$2,500 </span><span class="pbox3">$0.25</span>
+                                <input type="radio" name="radio" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="pricing_box1  full_width">
+                            <label class="pricing_radio"><span class="pbox1">10,000 Messages</span><span class="pbox2">$9,500</span><span class="pbox3">$0.25</span>
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="pricing_box1  full_width">
+                            <label class="pricing_radio"><span class="pbox1">25,000 Messages</span><span class="pbox2">$9,500</span><span class="pbox3">$0.19</span>
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="pricing_box1  full_width">
+                            <label class="pricing_radio"><span class="pbox1">50,000 Messages</span><span class="pbox2">$40,000</span><span class="pbox3">$0.17</span>
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="pricing_box1  full_width">
+                            <label class="pricing_radio"><span class="pbox1">1,00,000 Messages</span><span class="pbox2">$75,000</span><span class="pbox3">$0.16</span>
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="pricing_box1  full_width">
+                            <label class="pricing_radio"><span class="pbox1">10,00,000 Messages</span><span class="pbox2">$1,45,000 </span><span class="pbox3">$0.26</span>
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="see_more_btn  full_width">
+                        <ul>
+                            <li>
+                                <a href="#"> buy now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sms pricing wrapper end -->
+    <!-- pay fees wrapper start-->
+    <div class="pay_fees_Wrapper full_width">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="class_delivery_wrapper full_width">
+                        <h1>Pay As You Go. No Hidden Setup Fees. Forever Free <br>
+                            To Use Platform.</h1>
+
+                        <ul>
+                            <li>
+                                <a href="#"> <i class="flaticon-tick-box"></i> Lifetime validity for SMS credits
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="flaticon-tick-box"></i> Credits can be used for both Promotional
+                                    &amp; Transactional SMS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="flaticon-tick-box"></i> Free access to web portal &amp; SMS APIs </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="feature_wrapper full_width">
+                        <h1>Just pay for SMS. Get access to 50+ free features right <br>
+                            out of the box including:</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+                            <div class="pay_fees_links full_width">
+
+                                <ul>
+
+                                    <li> <a href="#"><i class="flaticon-circular-shape-silhouette"></i>Send Files via
+                                            SMS
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="flaticon-circular-shape-silhouette"></i>Send in 20+
+                                            Languages
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="flaticon-circular-shape-silhouette"></i>Comprehensive
+                                            APIs
+
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"> <i class="flaticon-circular-shape-silhouette"></i>Surveys &amp; Forms
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+                            <div class="pay_fees_links full_width">
+
+                                <ul>
+
+                                    <li> <a href="#"><i class="flaticon-circular-shape-silhouette"></i>Personalize Bulk
+                                            Sends
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="flaticon-circular-shape-silhouette"></i>Real-time Reports
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="flaticon-circular-shape-silhouette"></i>Manage Inbound
+                                            SMS
+
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"> <i class="flaticon-circular-shape-silhouette"></i>Excel to SMS
+                                            Plugin
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 col-sm-12">
+                            <div class="pay_fees_links full_width">
+
+                                <ul>
+
+                                    <li> <a href="#"><i class="flaticon-circular-shape-silhouette"></i>URL Shortener
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="flaticon-circular-shape-silhouette"></i>Custom Sender IDs
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> <i class="flaticon-circular-shape-silhouette"></i>Opt-out/Opt-in
+                                            Path
+
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"> <i class="flaticon-circular-shape-silhouette"></i>Android/iOS App
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- delivery wrapper end-->
+    <!-- payment wrapper start-->
+    <div class="available_payment_wrapper full_width">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="comapnay_content_wrapper full_width">
+                        <h1>Available payment methods :</h1>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="payment_slider full_width">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="company_img_wrapper">
+                                    <a href="#"><img src="{% static 'web/images/pay1.png' %}" alt="img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="company_img_wrapper">
+                                    <a href="#"><img src="{% static 'web/images/pay2.png' %}" alt="img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="company_img_wrapper">
+                                    <a href="#"><img src="{% static 'web/images/pay3.png' %}" alt="img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="company_img_wrapper">
+                                    <a href="#"><img src="{% static 'web/images/pay4.png' %}" alt="img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="company_img_wrapper">
+                                    <a href="#"><img src="{% static 'web/images/pay5.png' %}" alt="img"></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="company_img_wrapper">
+                                    <a href="#"><img src="{% static 'web/images/pay6.png' %}" alt="img"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- payment wrapper end-->
+    <!-- footer Wrapper start -->
+
+
+
+    <!-- footer wrapper end-->
+
+    <!-- custom js start -->
+    {% comment %} <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.menu-aim.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/custom.js"></script> {% endcomment %}
+    <script>
+        var pricing_url = 'https://control.msg91.com/action_layer.php';
+
+        window.addEventListener('load', function () {
+            console.log(jQuery(this));
+            jQuery(document).on("click", ".types li", function () {
+                jQuery('#type').val(jQuery(this).attr('value')).change();
+                jQuery('.typetext').html(jQuery(this).html());
+            });
+            jQuery(document).on("click", ".currencys li", function () {
+                jQuery('#currency').val(jQuery(this).attr('value')).change();
+                jQuery('.currencytext').html(jQuery(this).html());
+            })
+
+            jQuery(document).on("click", ".currencys2 li", function () {
+                jQuery('#currency2').val(jQuery(this).attr('value')).change();
+                jQuery('.currencytext2').html(jQuery(this).html());
+            })
+
+            var timer;
+            var carr;
+            carr = [];
+        });
+    </script>
+
+
+</body></html>
+
+{% endblock %}

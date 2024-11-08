@@ -1,0 +1,267 @@
+{% extends 'web/base1.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html><!-- 
+    Template Name: TEXT-160 SMS
+    Version: 1.0.0
+    Author: Webstrot
+    
+    --><!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]--><!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]--><!--[if !IE]><!--><html lang="zxx"><!--[endif]--><head>
+        <meta charset="utf-8">
+        <title>Worntech Bulk Sms</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'web/images/favicon.png' %}">
+        <meta name="description" content="TEXT-160, bulk sms">
+        <meta name="keywords" content="TEXT-160, bulk sms">
+        <meta name="author" content="">
+        <meta name="MobileOptimized" content="320">
+
+
+        <!-- Animation Css -->
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="{% static 'web/css/bootstrap.min.css' %}" rel="stylesheet">
+        <!-- font-awesome -->
+        <link href="{% static 'web/css/font-awesome.css' %}" rel="stylesheet">
+        <!-- Web Fonts -->
+        <link href="{% static 'web/css/fonts.css' %}" rel="stylesheet">
+        <link href="{% static 'web/css/reset.css' %}" rel="stylesheet">
+        <!-- Flaticon Css -->
+        <link href="{% static 'web/css/flaticon.css' %}" rel="stylesheet">
+        <!-- Owl Carousel -->
+        <link href="{% static 'web/css/testimonial.css' %}" rel="stylesheet">
+        <link href="{% static 'web/css/owl.theme.default.css' %}" rel="stylesheet">
+        <link href="{% static 'web/css/owl.carousel.css' %}" rel="stylesheet">
+        <!-- Style CSS -->
+        <link href="{% static 'web/css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'web/css/responsive.css' %}" rel="stylesheet">
+    </head>
+
+<body>
+
+    <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Preloader start -->
+    <div id="preloader">
+        <div id="status">
+            <div class="status-mes"></div>
+        </div>
+    </div>
+    <!-- Preloader end -->
+    <!-- header wrapper start -->
+
+
+    <!-- header wrapper end -->
+    <!--inner Title Start -->
+    <div class="sms_title_main_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="sms_inner_title_heading full_width">
+                        <h2>Contact Us</h2>
+                        <ul>
+                            <li><a href="#">Home</a> �&nbsp;�&nbsp;�&nbsp;/</li>
+                            <li>Contact Us</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- inner Title End -->
+    <!-- contact Wrapper start -->
+    <div class="contact_wrapper full_width">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-12 col-sm-12">
+                    <div class="sms_contact_box_wrapper full_width">
+                        <i class="flaticon-support"></i>
+                        <div class="sms_contact_info_box">
+                            <h1>contact support</h1>
+                            <p>+145-4886897</p>
+                            <a href="#">support@example.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 col-sm-12">
+                    <div class="sms_contact_box_wrapper full_width">
+                        <i class="flaticon-contact-book"></i>
+                        <div class="sms_contact_info_box">
+                            <h1>contact sales</h1>
+                            <p>+145-4886897</p>
+                            <a href="#">sales@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact Wrapper end -->
+    <!-- contact form Wrapper start -->
+    <div class="contact_form_wrapper full_width">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-12 col-sm-12">
+                    <div class="sms_contact_form_box full_width">
+                        <form>
+
+                            <div class="form-pos">
+                                <div class="form-group i-name">
+                                    <label>Name </label>
+                                    <input type="text" class="form-control require" name="full_name" id="namTen-first" placeholder=" Name*">
+                                    <i class="fas fa-user-alt"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-e">
+                                <div class="form-group i-email">
+                                    <label>Email Address</label>
+                                    <input type="email" class="form-control require" name="email" id="emailTen" placeholder=" Email Address*" data-valid="email" data-error="Email should be valid.">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-pos">
+                                <div class="form-group i-name">
+                                    <label>phone number </label>
+                                    <input type="text" class="form-control require" name="contact_no" id="phone_number" placeholder="Phone Number*">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                            </div>
+                            <div class="form-pos">
+                                <div class="form-group i-name">
+                                    <label>type of query </label>
+                                    <select name="country" class="require">
+                                        <option value="0">sales</option>
+                                        <option value="1">retail</option>
+                                        <option value="2">marketing</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="form-pos">
+                                <div class="form-group i-name">
+                                    <label>Are You an Existing Customer?</label>
+                                    <select name="customer" class="require">
+                                        <option value="3">yes</option>
+                                        <option value="4">no</option>
+
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="form-m">
+                                <div class="form-group i-message">
+                                    <label>how can we help? </label>
+                                    <textarea class="form-control require" name="message" rows="5" id="messageTen" placeholder="How Can We Help?"></textarea>
+                                    <i class="fas fa-comment"></i>
+                                </div>
+                            </div>
+                            <div class="captch_box">
+                                <div class="captchaWrapper">
+                                    <button type="button" class="captchaBox boxHover"></button>
+                                </div>
+                                <input type="checkbox" name="hiddenCaptcha" id="hiddenCaptcha" disabled="disabled">
+                                <label for="hiddenCaptcha" class="captchaLabel">I'm not a robot </label> <img src="{% static 'web/images/caps.png' %}" alt="img">
+                            </div>
+
+                            <div class="contact_btn full_width">
+                                <div class="response"></div>
+                                <div class="js_btn_wrapper full_width">
+                                    <input type="hidden" name="form_type" value="contact">
+                                    <button type="button" class="submitForm">submit</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 col-sm-12">
+                    <div class="visiting_Wrapper full_width">
+                        <div class="sms_heading_wrapper">
+                            <h4>Visit Our Headquarters</h4>
+                            <h3>Street Name 50, Building 85,
+                                12345 SoHo, New York</h3>
+                        </div>
+                        <ul class="visitors_contact full_width">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>123 City Avenue, Floor 10,
+                                    <br> malbourne, Australia.
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <p>1 -234 -456 -7890
+                                    <br> 1 -234 -456 -7890
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="#">sms@example.com </a>
+                                <br>
+                                <a href="#">support@example.com</a>
+                            </li>
+
+                        </ul>
+
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14694.89654676977!2d76.03231791896204!3d22.960384559751162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396317831918697f%3A0x54768b0995b49de6!2sRam%20Nagar%2C%20Dewas%2C%20Madhya%20Pradesh%20455001!5e0!3m2!1sen!2sin!4v1601975153656!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact form Wrapper end -->
+    <!-- footer Wrapper start -->
+
+
+    <!-- footer wrapper end-->
+    <!-- custom js start -->
+
+    {% comment %} <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.menu-aim.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/captcha.js"></script>
+    <script src="js/contact_form.js"></script>
+    <script src="js/custom.js"></script> {% endcomment %}
+
+    <script>
+        function initMap() {
+            var uluru = {
+                lat: -36.742775,
+                lng: 174.731559
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                scrollwheel: false,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBctr8WYTfFDi_oGbPEolSDzn4VZaAKVK0&amp;callback=initMap"></script>
+
+
+</body></html>
+
+{% endblock %}
